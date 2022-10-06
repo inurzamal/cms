@@ -1,0 +1,52 @@
+<div class="col-md-6 offset-md-3">
+    <h4>Update Certificate</h4> <br>
+    <form (ngSubmit)="updateContact()">
+
+        <div class="form-group">
+            <label >Id</label>
+            <input type="text" 
+            class="form-control" 
+            name="id" 
+            id="id"
+            [(ngModel)]="contact.cid"
+            readonly>
+        </div>
+
+        <br>
+        <div class="form-group">
+            <label >Name</label>
+            <input type="text" 
+            class="form-control" 
+            name="name" 
+            id="name"
+            [(ngModel)]="contact.name"
+            >
+        </div>
+        <br>
+        <div class="form-group">
+            <label >Certification</label>
+            <input type="text" 
+            class="form-control" 
+            name="email" 
+            id="email"
+            [(ngModel)]="contact.certification"
+            >
+        </div>
+        <br>
+        <div class="form-group">
+            <label >Status</label>
+            <input type="text" 
+            class="form-control" 
+            name="phone" 
+            id="phone"
+            [(ngModel)]="contact.status"
+            >
+        </div>
+        <br>
+        <div>
+            <button class="btn btn-primary" type="submit">
+                Update
+            </button>
+        </div>
+    </form>
+    </div>

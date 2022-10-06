@@ -1,0 +1,26 @@
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Certification</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let contact of contacts">
+            <td>{{contact.cid}}</td>
+            <td>{{contact.name}}</td>
+            <td>{{contact.certification}}</td>
+            <td>{{contact.status}}</td>
+            <td>
+              <button class="btn btn-light btn-sm" (click)="editContact(contact.cid)">Edit</button>
+              &nbsp;
+              <button class="btn btn-light btn-sm" (click)="deleteContact(contact.cid)">Delete</button>
+              &nbsp;
+            </td>
+        </tr>
+    </tbody>
+  </table>

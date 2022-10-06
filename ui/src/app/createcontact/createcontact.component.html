@@ -1,0 +1,38 @@
+<div class="col-md-6 offset-md-3">
+    <h4>Create Certificate</h4> <br>
+    <form (ngSubmit)="onSubmit()">
+    
+        <div class="form-group">
+            <label >Name</label>
+            <input type="text" 
+            class="form-control" 
+            name="name" 
+            id="name"
+            [(ngModel)]="contact.name"
+            >
+        </div>
+        <div class="form-group">
+            <label >Certification</label>
+            <input type="text" 
+            class="form-control" 
+            name="email" 
+            id="email"
+            [(ngModel)]="contact.certification"
+            >
+        </div>
+        <div class="form-group">
+            <label >Status</label>
+            <input type="text" 
+            class="form-control" 
+            name="phone" 
+            id="phone"
+            [(ngModel)]="contact.status">
+        </div>
+        <br>
+        <div>
+            <button class="btn btn-primary" type="submit">
+                Submit
+            </button>
+        </div>
+    </form>
+    </div>
